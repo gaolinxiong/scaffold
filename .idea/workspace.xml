@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9db2cb9b-e65a-4b5a-b1e1-6db22e75abd0" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/bokaTest-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bokaTest-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606109064489</updated>
-      <workItem from="1606109065536" duration="5503000" />
+      <workItem from="1606109065536" duration="5756000" />
     </task>
     <servers />
   </component>
