@@ -4,7 +4,7 @@
   "description": "前端脚手架开发",
   "main": "index.js",
   "bin": {
-    "bokaTest": "./bin/boka.js"
+    "bokaTest": "./bin/bokaTest.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/gaolinxiong/scaffold#readme",
   "dependencies": {
-    "commander": "^6.2.0"
+    "chalk": "^4.1.0",
+    "commander": "^6.2.0",
+    "decompress": "^4.2.1",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0",
+    "request": "^2.88.2"
   }
 }
