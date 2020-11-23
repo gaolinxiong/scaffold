@@ -20,28 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db2cb9b-e65a-4b5a-b1e1-6db22e75abd0" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/element-icons.313f7da.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/element-icons.4520188.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/4289cfab1cb518fd700f094ad31f36c6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/index.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/apiRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/globals.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/vue-shim.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606109064489</updated>
-      <workItem from="1606109065536" duration="538000" />
+      <workItem from="1606109065536" duration="744000" />
     </task>
     <servers />
   </component>
@@ -95,9 +75,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="568" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606109103477">
+    <state x="568" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606109767458">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="568" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1080/0.0.1792.1120/1792.0.1920.1080@0.0.1792.1120" timestamp="1606109103477" />
+    <state x="568" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1080/0.0.1792.1120/1792.0.1920.1080@0.0.1792.1120" timestamp="1606109767458" />
   </component>
 </project>
