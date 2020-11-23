@@ -1,6 +1,6 @@
 {
   "name": "gaolinxiong-scaffold",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "前端脚手架开发",
   "main": "index.js",
   "bin": {
