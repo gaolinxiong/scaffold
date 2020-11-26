@@ -137,6 +137,7 @@ function replaceFileContent(projectName,templateName){
 }
 
 function install(projectName){
+    console.log('projectName', projectName)
     const currentPath = process.cwd();
     const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm'
     // 创建一个子进程执行npm install 任务
