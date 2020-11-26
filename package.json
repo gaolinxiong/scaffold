@@ -1,10 +1,10 @@
 {
   "name": "gaolinxiong-scaffold",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "前端脚手架开发",
   "main": "index.js",
   "bin": {
-    "bokaScaffold": "./bin/bokaScaffold.js"
+    "bokaCli": "./bin/bokaCli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/gaolinxiong/scaffold#readme",
   "dependencies": {
     "chalk": "^4.1.0",
+    "child_process": "^1.0.2",
     "commander": "^6.2.0",
     "decompress": "^4.2.1",
     "inquirer": "^7.3.3",

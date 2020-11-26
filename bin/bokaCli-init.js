@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const { program } = require("commander");
+const child_process = require("child_process");
 const chalk = require('chalk');
 const inquirer = require('inquirer');
 const logger = require('./logger');
@@ -22,10 +23,6 @@ program.arguments('[projectName]') // 指定解析的参数
         force = cmd.force;
     });
 program.parse(process.argv);
-
-console.log(projectName,force)
-
-
 
 // 设置用户交互的问题
 const questions = [
@@ -71,7 +68,6 @@ inquirer.prompt(questions).then(result=>{
 
 function checkProjectExits(projectName,templateName){
     const currentPath = process.cwd();
-    console.log('currentPath-->', currentPath)
     const filePath = path.join(currentPath,`${projectName}`); // 获取项目的真实路径
     if(force){ // 强制删除
         if(fs.existsSync(filePath)){
@@ -141,5 +137,19 @@ function replaceFileContent(projectName,templateName){
 }
 
 function install(projectName){
-    console.log(projectName)
+    const currentPath = process.cwd();
+    const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm'
+    // 创建一个子进程执行npm install 任务
+    const nodeJob = child_process.spawn(npm , ['install'], {
+        stdio: 'inherit', // 指定父子进程通信方式
+        cwd: path.join(currentPath,projectName)
+    });
+    // 监听任务结束，提示用户创建成功，接下来的操作
+    nodeJob.on("close",()=>{
+        logger.info(`创建成功! ${projectName} 项目位于 ${path.join(currentPath,projectName)}`)
+        logger.info('')
+        logger.info('你可以执行以下命令运行开发环境')
+        logger.infoGreen(` cd ${projectName}       `);
+        logger.infoGreen(` npm run dev             `);
+    })
 }
