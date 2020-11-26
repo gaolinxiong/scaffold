@@ -86,7 +86,7 @@ function checkProjectExits(projectName,templateName){
             message: `${projectName}文件夹已存在，是否覆盖？`
         }).then(data=>{
             if(!data.out){ // 用户不同意
-                exit();
+                logger.exit();
             }else{
                 // 删除文件夹
                 spinner.logWithSpinner(`删除${projectName}...`)
@@ -95,7 +95,7 @@ function checkProjectExits(projectName,templateName){
                 startDownloadTemplate(projectName, templateName) // 开始下载模板
             }
         }).catch(error=>{
-            exit(error);
+            logger.exit(error);
         })
     }else{
         startDownloadTemplate(projectName, templateName) // 开始下载模板
@@ -130,7 +130,7 @@ function replaceFileContent(projectName,templateName){
         html = html.replace(/<title>(.*)<\/title>/g,`<title>${projectName}</title>`)
         fs.writeFileSync(indexPath,html);
     }catch(error){
-        exit(error)
+        logger.exit(error)
     }
     // 安装依赖
     install(projectName)

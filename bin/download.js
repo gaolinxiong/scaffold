@@ -10,10 +10,10 @@ exports.downloadTemplate = function (templateName,projectName,callBack){
 
     // 根据templateName拼接github对应的压缩包url
     let url;
-    if (projectName === 'tsProject') {
-        url = 'https://codeup.aliyun.com/5ef854182c41c1ea2703aeea/boka-frontend/tsFeTemplate/repository/archive.zip?spm=a2cl9.codeup_devops2020_goldlog_projectFiles.0.0.71ac7103E47EBZ&ref=master';
+    if (templateName === 'tsProject') {
+        url = 'https://codeup.aliyun.com/5ef854182c41c1ea2703aeea/boka-frontend/tsFeTemplate/repository/archive.zip?ref=master';
     } else {
-        url = 'https://codeup.aliyun.com/5ef854182c41c1ea2703aeea/boka-frontend/jsFeTemplate/repository/archive.zip?spm=a2cl9.codeup_devops2020_goldlog_projectFiles.0.0.1a997103yp9arG&ref=master';
+        url = 'https://codeup.aliyun.com/5ef854182c41c1ea2703aeea/boka-frontend/jsFeTemplate/repository/archive.zip?ref=master';
     }
     // const url = `https://github.com/gaolinxiong/tsProject/archive/master.zip`;
 
