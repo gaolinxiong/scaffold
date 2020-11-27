@@ -1,37 +1,22 @@
-const request = require("request");
-const process = require('process');
+const request = require("request")
 const fs = require("fs")
 const path = require("path")
 const currentPath = process.cwd();
 const spinner = require("./spinner")
 const os = require("os")
 const { deletePath , unzipFile } = require("./io")
-const child_process = require("child_process");
-const logger = require('./logger');
-
-
 
 exports.downloadTemplate = function (templateName,projectName,callBack){
 
     // 根据templateName拼接github对应的压缩包url
     let temp;
     if (templateName === 'tsProject') {
-        temp = 'tsFeTemplate';
+        temp = 'tsProject';
     } else {
-        temp = 'jsFeTemplate';
+        temp = 'jsProject';
     }
-    // const url = `https://github.com/gaolinxiong/tsProject/archive/master.zip`;
-    const url = `https://codeup.aliyun.com/5ef854182c41c1ea2703aeea/boka-frontend/${temp}/repository/archive.zip?ref=master`;
-
-    const currentPath = process.cwd();
-    child_process.exec('git clone git@codeup.aliyun.com:5ef854182c41c1ea2703aeea/boka-frontend/tsFeTemplate.git', {cwd:currentPath}, function (error, stdout, stderr) {
-        if (error !== null) {
-            console.log('exec error: ' + error);
-        } else {
-            console.log(time + ' ' + stdout)
-            // console.log(stdout)
-        }
-    })
+    const url = `https://github.com/gaolinxiong/${temp}/archive/master.zip`;
+    // const url = `https://codeup.aliyun.com/5ef854182c41c1ea2703aeea/boka-frontend/${temp}/repository/archive.zip?ref=master`;
 
     // 压缩包下载的目录，这里是在系统临时文件目录创建一个目录
     const tempProjectPath = fs.mkdtempSync(path.join(os.tmpdir(), `${projectName}-`));
